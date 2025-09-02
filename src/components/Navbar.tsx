@@ -19,12 +19,12 @@ const Navbar = () => {
           </div>
           
           <nav className="hidden lg:flex space-x-8">
-            <a href="#riesenia" className="hover:text-teal-400 transition-colors">Riešenia</a>
-            <a href="#produkty" className="hover:text-teal-400 transition-colors">Produkty</a>
-            <a href="#skolenia" className="hover:text-teal-400 transition-colors">Školenia</a>
-            <a href="#o-nas" className="hover:text-teal-400 transition-colors">O nás</a>
-            <a href="#blog" className="hover:text-teal-400 transition-colors">Blog</a>
-            <a href="#kontakt" className="hover:text-teal-400 transition-colors">Kontakt</a>
+            <Link to="/software" className="hover:text-teal-400 transition-colors">SW</Link>
+            <Link to="/hardware" className="hover:text-teal-400 transition-colors">HW</Link>
+            <Link to="#skolenia" className="hover:text-teal-400 transition-colors">Školenia</Link>
+            <Link to="#o-nas" className="hover:text-teal-400 transition-colors">O nás</Link>
+            <Link to="#blog" className="hover:text-teal-400 transition-colors">Blog</Link>
+            <Link to="#kontakt" className="hover:text-teal-400 transition-colors">Kontakt</Link>
           </nav>
 
           <div className="flex items-center space-x-4">

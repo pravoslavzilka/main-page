@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import Hardware from './pages/Hardware';
+import Software from './pages/Software';
 
 
 
@@ -22,25 +23,10 @@ function App() {
           
           {/* Project Routes */}
           <Route path="/hardware" element={<Hardware />} />
+          <Route path="/software" element={<Software />} />
 
-
-          
-          {/* Handbook Route */}
-          
-          {/* Toolbox Routes */}
-          
-          {/* Engagement Routes 
-          <Route path="/engagement" element={<Engagement />} />
-          <Route path="/engagement/community" element={<EngagementCommunity />} />
-          <Route path="/engagement/events" element={<EngagementEvents />} />
-          <Route path="/engagement/impact" element={<EngagementImpact />} />
           
           
-          <Route path="/duckweed-mafia" element={<DuckweedMafia />} />
-          <Route path="/duckweed-mafia/team" element={<DuckweedMafiaTeam />} />
-          <Route path="/duckweed-mafia/mission" element={<DuckweedMafiaMission />} />
-          <Route path="/duckweed-mafia/culture" element={<DuckweedMafiaCulture />} />
-          */}   {/* Duckweed Mafia Routes */}
 
           {/*<Route path="/handbook" element={<Handbook />} />*/}
         </Routes>
