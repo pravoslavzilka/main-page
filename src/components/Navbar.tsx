@@ -1,3 +1,4 @@
+import{ Link} from 'react-router-dom'
 
 
 
@@ -7,11 +8,14 @@ const Navbar = () => {
       <header className="bg-slate-800 text-white py-4 px-6 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <img 
-              src="https://new.smartcad.sk/wp-content/uploads/2023/10/smartcad-logo-v-krivkach_-biele-638x100.png" 
-              alt="smartCad Logo" 
-              className="h-10" />
-            
+            <Link to="/">
+              <img
+                src="https://new.smartcad.sk/wp-content/uploads/2023/10/smartcad-logo-v-krivkach_-biele-638x100.png"
+                alt="smartCad Logo"
+                className="h-10"
+              />
+            </Link>
+
           </div>
           
           <nav className="hidden lg:flex space-x-8">
