@@ -6,104 +6,129 @@ import {
   ExternalLink,
   Play,
   Download,
-  Triangle
+  Triangle,
+  Mail,
+  Phone,
+  MapPin,
+  Send,
+  User,
+  MessageSquare
 } from 'lucide-react';
-
 
 const Software = () => {
     const [activeCategory, setActiveCategory] = useState('all');
+  const [formData, setFormData] = useState({
+    meno: '',
+    priezvisko: '',
+    nazovSpolochnosti: '',
+    email: '',
+    mobilneCislo: '',
+    vašaSprava: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    // Simulate form submission
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    console.log('Form submitted:', formData);
+    alert('Ďakujeme za Vašu správu! Budeme Vás kontaktovať čoskoro.');
+    
+    // Reset form
+    setFormData({
+      meno: '',
+      priezvisko: '',
+      nazovSpolochnosti: '',
+      email: '',
+      mobilneCislo: '',
+      vašaSprava: ''
+    });
+    setIsSubmitting(false);
+  };
+
+
+  
 
   // Software data with categories
   const softwareData = [
     {
       id: 1,
       category: 'visualization',
-      title: 'Ktorý je pre Vás ten najvhodnejší?',
-      description: 'Predstavili sme posledané informácie, ktoré Vám pomôžu zorientovať sa',
-      details: 'V-RAY / CORONA / ENSCAPE / TWINMOTION',
-      image: '/api/placeholder/400/250',
-      buttonText: 'Prečítajte si blog',
+      title: 'Rýchle 3D vizualizácie',
+      description: 'Vizualizačné riešenie pre REVIT, ArchiCAD, SketchUp Pro, Rhino, Maya, RIKCAD, Grasshopper',
+      details: 'S ľahkosťou vytvárajte vysokokvalitné obrázky, panorámy, štandardné videá alebo videá s rozlíšením 360° pre virtuálnu realitu.',
+      image: 'https://new.smartcad.sk/wp-content/uploads/2024/02/twinmotion.png',
+      buttonText: 'Twinmotion',
       logo: null,
       badge: 'softvéry'
     },
     {
       id: 2,
       category: 'visualization',
-      title: 'Rýchle 3D vizualizácie',
-      description: 'Vizualizačné riešenie pre REVIT, ArchiCAD, SketchUp, Pro, Rhino, Maya, RINCAD, Grasshopper',
-      details: 'S jednoduchú využívate vysokokvalitné obrazky, panorámy, štandardné video alebo video s rozšírenou 360° pre virtuálnu realitu.',
-      image: '/api/placeholder/400/250',
-      buttonText: 'Twinmotion',
+      title: 'Vysoko výkonný, fotorealistický, rendrovací sw pre 3ds Max a Cinema 4D',
+      description: '',
+      details: 'Perfektný nástroj na vytváranie reálneho prostredia a nedokonalostí, ponúkajúci nové možnosti nastavenia polohy kamery, mraky reagujúce na polohu slnka, …Corona',
+      image: 'https://new.smartcad.sk/wp-content/uploads/2023/12/Corona-smartcad.png',
+      buttonText: 'Corona',
       logo: 'Twinmotion',
       badge: null
     },
     {
       id: 3,
-      category: 'visualization',
-      title: 'Vysoko výkonný, fotorealistický, rendrovací sw pre 3ds Max a Cinema 4D',
-      description: 'Perfektný nástroj na vytváranie reálneho vzhľadu a nedefiniteľnosť ponuložiť nové metódy postavenia pokôlky, kamery, mraky zoznamuje na pohľa sinka...',
+      category: 'construction',
+      title: 'obsahuje: Revit, AutoCAD, Civil 3D, 3ds Max, Robot Structural, Advance Steel, InfraWorks, Docs, Insight, ReCap Pro',
+      description: 'AEC Collection poskytuje projektantom, konštruktérom a stavbárom tie najlepšie nástroje a integrované pracovné postupy.',
       details: '',
-      image: '/api/placeholder/400/250',
-      buttonText: 'Corona',
+      image: 'https://new.smartcad.sk/wp-content/uploads/2024/02/AEC-collection.png',
+      buttonText: 'AEC Collection',
       logo: 'Corona',
       badge: null
     },
     {
       id: 4,
-      category: 'visualization',
-      title: 'Vizualizácie jednducho a rýchlo z CAD, BIM modelov',
-      description: 'Enscape je real-time visualization plugin, ktorý sa integruje priamo do CAD a BIM software ako Revit, SketchUp, Rhino, ArchiCAD a Vectorworks...',
+      category: 'construction',
+      title: 'Plánovanie, návrh, stavba a správa budov',
+      description: 'BIM software Revit® je určený špeciálne pre tvorbu informačného modelu budovy (BIM), vrátane funkcií pre architektonický návrh, projekciu TZB a projektovanie konštrukcií.',
       details: '',
-      image: '/api/placeholder/400/250',
-      buttonText: 'Enscape',
+      image: 'https://new.smartcad.sk/wp-content/uploads/2024/02/AEC-collection.png',
+      buttonText: 'Revit',
       logo: 'ENSCAPE',
       badge: null
     },
     {
       id: 5,
-      category: 'construction',
-      title: 'Komplexne riešenie pre 3D modelovanie',
-      description: 'SketchUp Studio obsahuje SketchUp Pro desktop aplikáciu, webový SketchUp for Web a množstvo ďalších funkcií pre profesionálov...',
+      category: 'mechanical',
+      title: 'Vytvárajte vynikajúce produkty',
+      description: 'Software pre strojárske navrhovanie a 3D CAD Inventor® ponúka profesionálne 3D strojárske navrhovanie, dokumentáciu a simuláciu produktov.',
       details: '',
-      image: '/api/placeholder/400/250',
-      buttonText: 'SketchUp Studio',
+      image: 'https://new.smartcad.sk/wp-content/uploads/2024/02/inventor.jpg',
+      buttonText: 'Inventor Professional',
       logo: 'SketchUp Studio',
       badge: 'Trimble'
     },
     {
       id: 6,
-      category: 'visualization',
-      title: 'Najobľúbenejší renderer na svete',
-      description: 'V-Ray je výkonný rendering engine, ktorý sa používa v architektúre, dizajne, VFX, vizuálnych efektoch a animáciách...',
+      category: 'mechanical',
+      title: 'Fusion 360',
+      description: 'Fusion 360 je prvým 3D CAD, CAM a CAE nástrojom svojho druhu. Spája celý proces vývoja produktu do jedinej cloudovej platformy, ktorá funguje aj na Macu.',
       details: '',
-      image: '/api/placeholder/400/250',
-      buttonText: 'V-Ray',
+      image: 'https://new.smartcad.sk/wp-content/uploads/2024/02/fusion.jpg',
+      buttonText: 'Fusion 360   ',
       logo: 'V-Ray',
       badge: null
-    },
-    // Add more software items for construction and mechanical categories
-    {
-      id: 7,
-      category: 'construction',
-      title: 'Autodesk Revit',
-      description: 'Profesionálny BIM softvér pre architektonické a stavebné projekty',
-      details: 'Komplexné riešenie pre Building Information Modeling',
-      image: '/api/placeholder/400/250',
-      buttonText: 'Revit',
-      logo: 'Revit',
-      badge: 'Autodesk'
-    },
-    {
-      id: 8,
-      category: 'mechanical',
-      title: 'Autodesk Inventor',
-      description: '3D mechanické CAD riešenie pre produktový dizajn a výrobu',
-      details: 'Profesionálne nástroje pre strojárstvo a priemysel',
-      image: '/api/placeholder/400/250',
-      buttonText: 'Inventor',
-      logo: 'Inventor',
-      badge: 'Autodesk'
     }
+    
   ];
 
   // Filter software based on active category
@@ -114,7 +139,7 @@ const Software = () => {
   const categories = [
     {
       id: 'all',
-      name: 'Všetky kategórie',
+      name: 'Všetko',
       icon: Settings,
       color: 'bg-gray-600 hover:bg-gray-700',
       activeColor: 'bg-gray-700'
@@ -128,14 +153,14 @@ const Software = () => {
     },
     {
       id: 'construction',
-      name: 'Stavebníctvo, BIM, TZB, infraštruktúra',
+      name: 'Stavebníctvo',
       icon: Building2,
       color: 'bg-slate-700 hover:bg-slate-800',
       activeColor: 'bg-slate-800'
     },
     {
       id: 'mechanical',
-      name: 'Strojárstvo a pohybné systémy',
+      name: 'Strojárstvo',
       icon: Settings,
       color: 'bg-gray-700 hover:bg-gray-800',
       activeColor: 'bg-gray-800'
@@ -143,55 +168,7 @@ const Software = () => {
   ];
 
   const renderSoftwareCard = (software) => {
-    const getLogoComponent = (logo) => {
-      switch (logo) {
-        case 'Twinmotion':
-          return (
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xs">T</span>
-              </div>
-              <span className="text-white font-bold">Twinmotion</span>
-            </div>
-          );
-        case 'Corona':
-          return (
-            <div className="flex items-center space-x-2 bg-orange-500 px-2 py-1 rounded">
-              <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
-                <span className="text-orange-500 font-bold text-xs">C</span>
-              </div>
-              <span className="text-white font-bold text-sm">Corona</span>
-            </div>
-          );
-        case 'ENSCAPE':
-          return (
-            <div className="bg-orange-500 px-3 py-1 rounded">
-              <span className="text-white font-bold">ENSCAPE</span>
-            </div>
-          );
-        case 'SketchUp Studio':
-          return (
-            <div className="bg-blue-600 px-3 py-1 rounded">
-              <span className="text-white font-bold text-sm">SketchUp Studio</span>
-            </div>
-          );
-        case 'V-Ray':
-          return (
-            <div className="bg-blue-700 px-3 py-1 rounded flex items-center space-x-2">
-              <div className="w-6 h-6 bg-white rounded flex items-center justify-center">
-                <span className="text-blue-700 font-bold text-xs">V</span>
-              </div>
-              <span className="text-white font-bold text-sm">V-Ray</span>
-            </div>
-          );
-        default:
-          return (
-            <div className="bg-blue-600 px-3 py-1 rounded">
-              <span className="text-white font-bold text-sm">{logo}</span>
-            </div>
-          );
-      }
-    };
+    
 
     return (
       <div key={software.id} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
@@ -199,24 +176,10 @@ const Software = () => {
           <img 
             src={software.image}
             alt={software.title}
-            className="w-full h-48 object-cover"
+            className="w-full h-55 object-cover"
           />
-          <div className="absolute top-4 left-4">
-            {software.logo ? getLogoComponent(software.logo) : (
-              software.badge && (
-                <span className="bg-black bg-opacity-60 text-white px-2 py-1 rounded text-sm">
-                  {software.badge}
-                </span>
-              )
-            )}
-          </div>
-          {software.badge && software.logo && (
-            <div className="absolute bottom-4 left-4">
-              <div className="bg-blue-600 px-2 py-1 rounded">
-                <span className="text-white text-xs font-bold">{software.badge}</span>
-              </div>
-            </div>
-          )}
+          
+          
         </div>
         <div className="p-6">
           <h3 className="text-lg font-bold mb-3 line-clamp-2">
@@ -259,9 +222,9 @@ const Software = () => {
       </section>
 
       {/* Enhanced Category Filter Tabs */}
-      <section className="bg-white shadow-lg border-b border-gray-200">
+      <section className=" border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-2">
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 items-center justify-center">
             {categories.map((category) => {
               const IconComponent = category.icon;
               const isActive = activeCategory === category.id;
@@ -348,68 +311,211 @@ const Software = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-teal-600 text-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Potrebujete pomoc s výberom softvéru?
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Kontaktujte nás a poradíme Vám s najlepším riešením pre vaše projekty
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-teal-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors">
-              Kontaktovať nás
-            </button>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-medium hover:bg-white hover:text-teal-600 transition-colors">
-              Získať cenovú ponuku
-            </button>
+
+      {/* Contact Form Section */}
+      <section className="py-20 px-4 bg-gray-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Contact Info */}
+            <div className="bg-teal-600 text-white p-8 lg:p-12 rounded-2xl">
+              <div className="mb-8">
+                <h2 className="text-3xl font-bold mb-4">
+                  Kontaktujte nás
+                </h2>
+                <p className="text-teal-100 text-lg leading-relaxed">
+                  Máte otázky o našich softvérových riešeniach? Potrebujete pomoc s výberom správneho nástroja? 
+                  Sme tu pre Vás!
+                </p>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-teal-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Telefón</h4>
+                    <p className="text-teal-100">+421 123 456 789</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-teal-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Email</h4>
+                    <p className="text-teal-100">info@example.com</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-10 h-10 bg-teal-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-1">Adresa</h4>
+                    <p className="text-teal-100">
+                      Bratislava, Slovensko<br />
+                      Hlavná 123, 811 01
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-teal-500">
+                <h4 className="font-semibold mb-3">Pracovné hodiny</h4>
+                <div className="space-y-1 text-teal-100">
+                  <p>Pondelok - Piatok: 8:00 - 17:00</p>
+                  <p>Sobota - Nedeľa: Zatvorené</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form */}
+            <div className="bg-white p-8 lg:p-12 rounded-2xl shadow-xl">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="meno" className="block text-sm font-medium text-gray-700 mb-2">
+                      Meno <span className="text-red-500">*</span>
+                    </label>
+                    <div className="relative">
+                      <User className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                      <input
+                        type="text"
+                        id="meno"
+                        name="meno"
+                        value={formData.meno}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                        placeholder="Vaše meno"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label htmlFor="priezvisko" className="block text-sm font-medium text-gray-700 mb-2">
+                      Priezvisko <span className="text-red-500">*</span>
+                    </label>
+                    <div className="relative">
+                      <User className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                      <input
+                        type="text"
+                        id="priezvisko"
+                        name="priezvisko"
+                        value={formData.priezvisko}
+                        onChange={handleInputChange}
+                        required
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                        placeholder="Vaše priezvisko"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="nazovSpolochnosti" className="block text-sm font-medium text-gray-700 mb-2">
+                    Názov <span className="text-blue-600">spoločnosti</span>
+                  </label>
+                  <div className="relative">
+                    <Building2 className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                    <input
+                      type="text"
+                      id="nazovSpolochnosti"
+                      name="nazovSpolochnosti"
+                      value={formData.nazovSpolochnosti}
+                      onChange={handleInputChange}
+                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                      placeholder="Názov vašej spoločnosti"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    Email <span className="text-red-500">*</span>
+                  </label>
+                  <div className="relative">
+                    <Mail className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                      placeholder="vas@email.com"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="mobilneCislo" className="block text-sm font-medium text-gray-700 mb-2">
+                    Mobilné číslo na Vás <span className="text-red-500">*</span>
+                  </label>
+                  <div className="relative">
+                    <Phone className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                    <input
+                      type="tel"
+                      id="mobilneCislo"
+                      name="mobilneCislo"
+                      value={formData.mobilneCislo}
+                      onChange={handleInputChange}
+                      required
+                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                      placeholder="+421 xxx xxx xxx"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="vašaSprava" className="block text-sm font-medium text-gray-700 mb-2">
+                    Vaša správa <span className="text-red-500">*</span>
+                  </label>
+                  <div className="relative">
+                    <MessageSquare className="absolute left-3 top-3 w-5 h-5 text-gray-400" />
+                    <textarea
+                      id="vašaSprava"
+                      name="vašaSprava"
+                      value={formData.vašaSprava}
+                      onChange={handleInputChange}
+                      required
+                      rows={5}
+                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors resize-none"
+                      placeholder="Opíšte nám, čím Vám môžeme pomôcť..."
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-teal-500 text-white py-3 px-6 rounded-lg font-medium hover:bg-teal-600 disabled:bg-teal-300 transition-colors flex items-center justify-center space-x-2"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      <span>Odosielam...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-5 h-5" />
+                      <span>Odoslať správu</span>
+                    </>
+                  )}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
-              Prečo si vybrať naše softvérové riešenia?
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Eye className="w-8 h-8 text-teal-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Profesionálne vizualizácie</h3>
-              <p className="text-gray-600">
-                Vytvárajte fotorealistické rendery a animácie s najnovšími nástrojmi
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building2 className="w-8 h-8 text-teal-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">BIM integrácia</h3>
-              <p className="text-gray-600">
-                Plná kompatibilita s BIM workflow a stavebníckymi projektmi
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Settings className="w-8 h-8 text-teal-600" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">Technická podpora</h3>
-              <p className="text-gray-600">
-                Kompletná podpora, školenia a implementácia softvéru
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* CTA Section */}
+     
+     
     </div>
   );
 
