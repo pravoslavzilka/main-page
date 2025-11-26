@@ -41,7 +41,7 @@ const Hardware = () => {
       {/* Custom PC Section */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center" id='custom-pc'>
             <div>
               <h2 className="text-2xl font-bold text-teal-600 mb-6">
                 Počítačové zostavy na mieru
@@ -124,7 +124,7 @@ const Hardware = () => {
       {/* Large Format Printers */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center" id="plotter">
             <div>
               <h2 className="text-2xl font-bold text-teal-600 mb-6">
                 Veľkoformátové tlačiarne tzv. plotre

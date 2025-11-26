@@ -146,63 +146,10 @@ const Home = () =>  {
               <div className="w-20 h-20 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors">
                 <Monitor className="w-10 h-10 text-teal-600 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-2xl font-bold text-slate-800 mb-4">CAD Softvér</h3>
-              <p className="text-gray-600 mb-6">
-                AutoCAD, Revit, Civil 3D a ďalšie. Oficiálne Autodesk licencie a podpora.
-              </p>
-              <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mx-auto">
-                Zistiť viac <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow group">
-              <div className="w-20 h-20 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors">
-                <HardDrive className="w-10 h-10 text-teal-600 group-hover:text-white transition-colors" />
-              </div>
-              <h3 className="text-2xl font-bold text-slate-800 mb-4">CAD Hardvér</h3>
-              <p className="text-gray-600 mb-6">
-                Vysokovýkonné pracovné stanice, monitory, plotre a 3D vstupné zariadenia
-              </p>
-              <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mx-auto">
-                Zistiť viac <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow group">
-              <div className="w-20 h-20 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors">
-                <GraduationCap className="w-10 h-10 text-teal-600 group-hover:text-white transition-colors" />
-              </div>
-              <h3 className="text-2xl font-bold text-slate-800 mb-4">Školenia a workshopy</h3>
-              <p className="text-gray-600 mb-6">
-                Certifikované kurzy a prispôsobené školiace programy pre jednotlivcov a tímy
-              </p>
-              <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mx-auto">
-                Prihlásiť sa <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8" style={{ marginTop: '5rem' }}>
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow group">
-              <div className="w-20 h-20 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors">
-                <Workflow className="w-10 h-10 text-teal-600 group-hover:text-white transition-colors" />
-              </div>
-              <h3 className="text-2xl font-bold text-slate-800 mb-4">Technické a IT služby</h3>
-              <p className="text-gray-600 mb-6">
-                Opravy plotrov, inštalácie sw, správa siete
-              </p>
-              <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mx-auto">
-                Zistiť viac <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow group">
-              <div className="w-20 h-20 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors">
-                <Presentation className="w-10 h-10 text-teal-600 group-hover:text-white transition-colors" />
-              </div>
               <h3 className="text-2xl font-bold text-slate-800 mb-4">Projekčná činnosť</h3>
               <p className="text-gray-600 mb-6">
-                Železobetónové konštrukcie, TZB v Revite
+                železobetónové konštrukcie, TZB v Revite
+
               </p>
               <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mx-auto">
                 Zistiť viac <ArrowRight className="ml-2 w-4 h-4" />
@@ -215,7 +162,65 @@ const Home = () =>  {
               </div>
               <h3 className="text-2xl font-bold text-slate-800 mb-4">Konštrukčná činnosť</h3>
               <p className="text-gray-600 mb-6">
-                Potrubia, oceľové konštrukcie, pevnostné výpočty
+                potrubia, oceľové konštrukcie, pevnostné výpočty
+
+              </p>
+              <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mx-auto">
+                Zistiť viac <ArrowRight className="ml-2 w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow group">
+              <div className="w-20 h-20 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors">
+                <GraduationCap className="w-10 h-10 text-teal-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">Školenia</h3>
+              <p className="text-gray-600 mb-6">
+                BIM, CAD skupinové aj individuálne
+
+              </p>
+              <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mx-auto">
+                Prihlásiť sa <ArrowRight className="ml-2 w-4 h-4" />
+              </button>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8" style={{ marginTop: '5rem' }}>
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow group">
+              <div className="w-20 h-20 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors">
+                <Workflow className="w-10 h-10 text-teal-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">Software</h3>
+              <p className="text-gray-600 mb-6">
+                pre stavebníctvo, strojárstvo a 3D vizualizácie
+
+              </p>
+              <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mx-auto">
+                Zistiť viac <ArrowRight className="ml-2 w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow group">
+              <div className="w-20 h-20 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors">
+                <HardDrive className="w-10 h-10 text-teal-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">Hardware</h3>
+              <p className="text-gray-600 mb-6">
+                veľkoformátové stroje, výkonné PC zostavy
+
+              </p>
+              <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mx-auto">
+                Zistiť viac <ArrowRight className="ml-2 w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="bg-white rounded-xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow group">
+              <div className="w-20 h-20 bg-teal-100 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500 transition-colors">
+                <Presentation className="w-10 h-10 text-teal-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">IT služby</h3>
+              <p className="text-gray-600 mb-6">
+                správa siete a bezpečnosť dát
               </p>
               <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mx-auto">
                 Zistiť viac <ArrowRight className="ml-2 w-4 h-4" />
@@ -363,13 +368,15 @@ const Home = () =>  {
                 ))}
               </div>
               <p className="text-gray-600 mb-6">
-                "SmartCAD poskytol vynikajúce školenie pre náš tím. Lektori boli odborní a praktický prístup bol veľmi efektívny."
+                S ľuďmi zo spoločnosti smardCAD s.r.o. naša firma spolupracuje už viac ako 10 rokov a nemôžem povedať nič iné ako, že prístup a komunikácia firmy je na neskutočne vysokej úrovni. Členovia tímu zo smartCAD-u promptne reagujú na vzniknuté problémy a samozrejme ich úspešne vyriešenia. 
+Stretnutia, sa po tak dlhej dobe nesú už vo veľmi priateľskej atmosfére.
+
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
                 <div>
-                  <div className="font-semibold text-slate-800">Ing. Peter Novák</div>
-                  <div className="text-gray-600 text-sm">Hlavný architekt, ARCH Studio</div>
+                  <div className="font-semibold text-slate-800">Ivan Sopko</div>
+                  <div className="text-gray-600 text-sm">Konštruktér, SAM Industries a.s.</div>
                 </div>
               </div>
             </div>
@@ -381,13 +388,13 @@ const Home = () =>  {
                 ))}
               </div>
               <p className="text-gray-600 mb-6">
-                "CAD pracovná stanica, ktorú nám postavili, predčila očakávania. Perfektný výkon pre naše Civil 3D projekty."
+                Chcem poďakovať za seba a aj za našu spoločnosť za spoluprácu pri nákupe/obnove našich licencií AutoCad. Za ústretovosť, promptnosť a hlavne za trpezlivosť tento rok pri zmene spôsobu nákupu, ktorý sme Vašou pomocou a navigáciou zvládli bez problémov. Bolo nám vysvetlené všetko zrozumiteľne a užívateľsky jednoducho, čo nám veľmi pomohlo. Kvalitu Vašich služieb hodnotím osobne na 100%.
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
                 <div>
-                  <div className="font-semibold text-slate-800">Ing. Mária Svoboda</div>
-                  <div className="text-gray-600 text-sm">Projektový manažér, BuildTech</div>
+                  <div className="font-semibold text-slate-800">Andrea Fumačová</div>
+                  <div className="text-gray-600 text-sm">Špecialista podpory IT, VÚB banka</div>
                 </div>
               </div>
             </div>
@@ -399,13 +406,13 @@ const Home = () =>  {
                 ))}
               </div>
               <p className="text-gray-600 mb-6">
-                "Vynikajúca podpora a služby. Pomohli nám bezproblémovo prejsť na najnovší Autodesk balík."
+                So spoločnosťou smartCAD s.r.o. spolupracuje naša firma už niekoľko rokov. Doteraz som bola s dodaním zariadení aj produktov vždy spokojná. Obstarávali sme od nich už skladačku aj scanner značky Rowe, ktoré nám zjednodušujú výkon našej každodennej činnosti a šetria čas. Okrem zariadení sú našim pravidelným dodávateľom kancelárskych potrieb. Vždy sa snažia vyhovieť našim požiadavkám a aj v prípade reklamačného konania je situácia vždy vyriešená v náš prospech.
               </p>
               <div className="flex items-center">
                 <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
                 <div>
-                  <div className="font-semibold text-slate-800">Ing. Tomáš Kováč</div>
-                  <div className="text-gray-600 text-sm">CAD manažér, Engineering Plus</div>
+                  <div className="font-semibold text-slate-800">Viktória Jalšovská</div>
+                  <div className="text-gray-600 text-sm">Obchodný manažér, Junoz, s.r.o.</div>
                 </div>
               </div>
             </div>
