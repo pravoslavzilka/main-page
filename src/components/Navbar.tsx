@@ -70,7 +70,7 @@ const NavDropdown = ({ label, items, to, isMobile }) => {
               key={index}
               to={item.to}
               onClick={() => setIsOpen(false)}
-              className="block px-6 py-3 text-gray-700 hover:bg-teal-500 hover:text-white transition-colors whitespace-nowrap border-b border-gray-100 last:border-b-0 font-medium"
+              className="block px-6 py-3 text-gray-700 hover:bg-[#008080] hover:text-white transition-colors whitespace-nowrap border-b border-gray-100 last:border-b-0 font-medium"
             >
               {item.label}
             </Link>
@@ -123,7 +123,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-slate-800 text-white py-4 px-6 z-50">
+    <header className="bg-[#191a1a] text-white py-4 px-6 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <Link to="/">
@@ -150,14 +150,14 @@ const Navbar = () => {
 
         <div className="flex items-center space-x-4">
           {/* E-shop Button */}
-          <button className="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition-colors">
+          <button className="bg-[#008080] text-white px-4 py-2 rounded-lg hover:bg-teal-600 transition-colors">
             E-shop
           </button>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 hover:bg-slate-700 rounded transition-colors"
+            className="lg:hidden p-2 hover:bg-[#008080] rounded transition-colors"
             aria-label="Toggle menu"
           >
             <svg
