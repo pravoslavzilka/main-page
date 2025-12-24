@@ -284,17 +284,7 @@ const Hardware = () => {
 
           
 
-      {/* Partnership Section */}
-      <section className="py-16 px-4 bg-gray-800 text-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Spolupracujeme so silnými spoločnosťami
-          </h2>
-          <p className="text-gray-300">
-            Naši odbornosť partneři v dodávanie technológií
-          </p>
-        </div>
-      </section>
+      
     </div>
   );
 };

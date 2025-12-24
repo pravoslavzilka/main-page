@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 
 import Hardware from './pages/Hardware';
 import Software from './pages/Software';
+import TechnicalSupport from './pages/TechnicalSupport';
 
 
 
@@ -24,6 +25,7 @@ function App() {
           {/* Project Routes */}
           <Route path="/hardware" element={<Hardware />} />
           <Route path="/software" element={<Software />} />
+          <Route path="/tech/podpora" element={<TechnicalSupport />} />
 
           
           
