@@ -42,10 +42,7 @@ export default function TechnicalSupport() {
   };
 
   const faqItems = [
-    {
-      question: "Ako funguje naša technická podpora a komu je určená?",
-      answer: null
-    },
+    
     {
       question: "Čo je dôležité pri kontaktovaní technickej podpory?",
       answer: [
@@ -86,13 +83,13 @@ export default function TechnicalSupport() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#fbea01]/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
 
-      <div className="relative max-w-5xl mx-auto px-6 py-16">
+      <div className="relative max-w-6xl mx-auto px-6 py-16">
         {/* Header */}
-        <header className="text-center mb-16 animate-fadeIn">
-          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-[#080080] via-[#5fa4a4] to-[#f9a7b1] bg-clip-text text-transparent mb-4 tracking-tight">
+        <header className="text-center mt-10 mb-24 animate-fadeIn">
+          <h1 className="text-3xl md:text-6xl font-bold bg-[#008080] bg-clip-text text-transparent mb-4 tracking-tight">
             smartCAD technická podpora
           </h1>
-          <p className="text-xl text-[#191a1a]/70 font-light tracking-wide">
+          <p className="text-xl text-[#191a1a] font-light tracking-wide">
             Sme tu pre Vás už viac než 15 rokov - osobne aj online
           </p>
         </header>
@@ -102,12 +99,12 @@ export default function TechnicalSupport() {
           {/* Software Support */}
           <div className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#5fa4a4]/20 hover:border-[#5fa4a4]/50 hover:-translate-y-1">
             <div className="flex items-start gap-4">
-              <div className="bg-gradient-to-br from-[#080080] to-[#5fa4a4] p-4 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-[#191a1a] p-4 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                 <Monitor className="w-6 h-6 text-white" />
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-semibold text-[#191a1a] mb-3">Software</h3>
-                <a href="tel:+421940636743" className="text-3xl font-bold text-[#080080] hover:text-[#5fa4a4] transition-colors block mb-2">
+                <a href="tel:+421940636743" className="text-2xl font-bold text-[#008080] hover:text-[#5fa4a4] transition-colors block mb-2">
                   +421 940 636 743
                 </a>
                 <p className="text-sm text-[#191a1a]/60">v pracovné dni od 8:00 do 16:00</p>
@@ -118,12 +115,12 @@ export default function TechnicalSupport() {
           {/* Hardware Support */}
           <div className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#f9a7b1]/20 hover:border-[#f9a7b1]/50 hover:-translate-y-1">
             <div className="flex items-start gap-4">
-              <div className="bg-gradient-to-br from-[#5fa4a4] to-[#f9a7b1] p-4 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-[#191a1a] p-4 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                 <Phone className="w-6 h-6 text-white" />
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-semibold text-[#191a1a] mb-3">Hardware</h3>
-                <a href="tel:+421940636482" className="text-3xl font-bold text-[#f9a7b1] hover:text-[#5fa4a4] transition-colors block mb-2">
+                <a href="tel:+421940636482" className="text-2xl font-bold text-[#008080] hover:text-[#5fa4a4] transition-colors block mb-2">
                   +421 940 636 482
                 </a>
                 <p className="text-sm text-[#191a1a]/60">v pracovné dni od 8:00 do 16:00</p>
@@ -133,7 +130,7 @@ export default function TechnicalSupport() {
         </div>
 
         {/* Remote Access */}
-        <div className="bg-gradient-to-r from-[#080080] to-[#5fa4a4] rounded-2xl p-8 mb-12 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]">
+        <div className="bg-[#5fa4a4] rounded-2xl p-8 mb-12 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl">
@@ -148,7 +145,7 @@ export default function TechnicalSupport() {
               href="https://get.teamviewer.com/smartcadsk"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#fbea01] text-[#191a1a] px-8 py-4 rounded-xl font-semibold hover:bg-[#fbea01]/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2"
+              className="bg-[#008080] text-white px-8 py-4 rounded-xl font-semibold  transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2"
             >
               Stiahnuť bezplatnú aplikáciu Teamviewer
               <Download className="w-5 h-5" />
@@ -161,12 +158,14 @@ export default function TechnicalSupport() {
           onClick={() => setIsModalOpen(true)}
           className="w-full bg-white/80 backdrop-blur-sm rounded-2xl p-10 mb-12 shadow-xl border border-[#86cccf]/30 hover:border-[#5fa4a4]/50 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] cursor-pointer group"
         >
-          <h2 className="text-3xl font-bold text-[#191a1a] mb-6 text-center group-hover:text-[#080080] transition-colors">
+          <h2 className="text-3xl font-bold text-[#191a1a] mb-6 text-center group-hover:text-[#008080] transition-colors">
             Žiadajte požiadavku na podporu
           </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-[#080080] to-[#5fa4a4] mx-auto rounded-full group-hover:w-32 transition-all duration-300"></div>
+          <div className="h-1 w-24 bg-gradient-to-r from-[#008080] to-[#5fa4a4] mx-auto rounded-full group-hover:w-32 transition-all duration-300"></div>
           <p className="text-[#191a1a]/60 text-sm mt-4 text-center">Kliknite pre otvorenie formulára</p>
         </button>
+
+        <h2 className='text-2xl font-bold text-[#191a1a] mb-12 mt-12'>Ako funguje naša technická podpora a komu je určená?</h2>
 
         {/* FAQ Section */}
         <div className="space-y-4">
@@ -226,7 +225,7 @@ export default function TechnicalSupport() {
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fadeIn">
           <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto animate-slideUp">
             {/* Modal Header */}
-            <div className="sticky top-0 bg-gradient-to-r from-[#080080] to-[#5fa4a4] p-6 rounded-t-2xl flex items-center justify-between">
+            <div className="sticky top-0 bg-[#008080] p-6 rounded-t-2xl flex items-center justify-between">
               <h3 className="text-2xl font-bold text-white">Požiadavka na podporu</h3>
               <button
                 onClick={() => setIsModalOpen(false)}
@@ -353,7 +352,7 @@ export default function TechnicalSupport() {
                 </button>
                 <button
                   type="submit"
-                  className="flex-1 px-6 py-3 bg-gradient-to-r from-[#080080] to-[#5fa4a4] text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+                  className="flex-1 px-6 py-3 bg-[#008080] text-white rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
                 >
                   Odoslať požiadavku
                 </button>
