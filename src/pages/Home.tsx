@@ -11,42 +11,8 @@ import Blog from '../components/home_page/Blog';
 import Contact from '../components/home_page/Contact';
 
 
-
-
 const Home = () =>  {
-  
-  const [currentSlide, setCurrentSlide] = useState(0);
 
-  const companies = [
-    { name: 'Autodesk', logo: 'https://new.smartcad.sk/wp-content/uploads/2023/12/autodesk.png' },
-    { name: 'Trimble', logo: 'https://new.smartcad.sk/wp-content/uploads/2023/12/trimble.png' },
-    { name: 'Linear', logo: 'https://new.smartcad.sk/wp-content/uploads/2025/02/linear.png' },
-    { name: 'Dell', logo: 'https://new.smartcad.sk/wp-content/uploads/2023/12/dell.png' },
-    { name: 'ESET', logo: 'https://new.smartcad.sk/wp-content/uploads/2023/12/eset.png' },
-    {name: 'GFI Software', logo: 'https://new.smartcad.sk/wp-content/uploads/2023/12/gfi.png' },
-    { name: 'HP', logo: 'https://new.smartcad.sk/wp-content/uploads/2023/12/hp.png' },
-    { name: 'Kerio', logo: 'https://new.smartcad.sk/wp-content/uploads/2023/12/kerio.png' },
-    { name: 'ROWE', logo: 'https://new.smartcad.sk/wp-content/uploads/2023/12/rowe.png' },
-    { name: 'SIGMA', logo: 'https://new.smartcad.sk/wp-content/uploads/2023/12/sigma.png' },
-    { name: 'Lenovo', logo: 'https://new.smartcad.sk/wp-content/uploads/2023/12/lenovo.png' }
-  ];
-
- 
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % Math.ceil(companies.length / 4));
-    }, 3000);
-    return () => clearInterval(timer);
-  }, [companies.length]);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % Math.ceil(companies.length / 4));
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + Math.ceil(companies.length / 4)) % Math.ceil(companies.length / 4));
-  };
 
   return (
     <div className="min-h-screen bg-white">

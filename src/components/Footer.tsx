@@ -8,26 +8,24 @@ import {
 const Footer = () => {
     return (
 
-        <footer className="bg-slate-800 text-white py-16 px-6">
+        <footer className="bg-[#191a1a] text-white py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <div>
               <div className="flex items-center space-x-2 mb-6">
-                <div className="w-8 h-8 bg-teal-500 rounded-sm flex items-center justify-center">
-                  <div className="w-5 h-5 bg-white rounded-sm opacity-80"></div>
-                </div>
+                
                 <span className="text-xl font-bold">
-                  smart<span className="text-teal-400">CAD</span>
+                  <img src="https://new.smartcad.sk/wp-content/uploads/2023/10/smartcad-logo-v-krivkach_-biele-638x100.png" alt="SmartCAD Logo" />
                 </span>
               </div>
               <p className="text-gray-400 mb-6">
                 Váš dôveryhodný partner pre CAD softvér, hardvér a školiace riešenia na Slovensku.
               </p>
               <div className="flex space-x-4">
-                <div className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-teal-500 transition-colors cursor-pointer">
+                <div className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-[#49a7b1] transition-colors cursor-pointer">
                   <span className="text-sm font-bold">f</span>
                 </div>
-                <div className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-teal-500 transition-colors cursor-pointer">
+                <div className="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center hover:bg-[#49a7b1] transition-colors cursor-pointer">
                   <span className="text-sm font-bold">in</span>
                 </div>
               </div>
@@ -66,7 +64,7 @@ const Footer = () => {
                   placeholder="Váš email"
                   className="flex-1 px-4 py-2 bg-gray-700 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                 />
-                <button className="bg-teal-500 px-4 py-2 rounded-r-lg hover:bg-teal-600 transition-colors">
+                <button className="bg-[#49a7b1] px-4 py-2 rounded-r-lg hover:bg-teal-600 transition-colors">
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </div>
