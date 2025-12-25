@@ -142,7 +142,7 @@ export default function TechnicalSupport() {
               </div>
             </div>
             <a
-              href="https://get.teamviewer.com/smartcadsk"
+              href="https://smartcad.sk/tv/smartcad-podpora.exe"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#008080] text-white px-8 py-4 rounded-xl font-semibold  transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2"

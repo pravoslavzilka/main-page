@@ -104,7 +104,7 @@ const Navbar = () => {
         { label: 'Projekčná činnosť', to: '/hardware/graphics' },
         { label: 'Konštrukčná činnosť', to: '/hardware/peripherals' },
         { label: 'IT služby', to: '/hardware/storage' },
-        { label: 'Technická podpora', to: '/hardware/network' }
+        { label: 'Technická podpora', to: '/tech/podpora' }
       ]
     },
     {
