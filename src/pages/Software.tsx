@@ -141,14 +141,14 @@ const Software = () => {
       id: 'all',
       name: 'Všetko',
       icon: Settings,
-      color: 'bg-gray-600 hover:bg-gray-700',
-      activeColor: 'bg-gray-700'
+      color: 'bg-slate-700 hover:bg-slate-800',
+      activeColor: 'bg-teal-700'
     },
     {
       id: 'visualization',
       name: 'Vizualizácie a rendrovanie',
       icon: Triangle,
-      color: 'bg-teal-600 hover:bg-teal-700',
+      color: 'bg-slate-700 hover:bg-slate-800',
       activeColor: 'bg-teal-700'
     },
     {
@@ -156,14 +156,14 @@ const Software = () => {
       name: 'Stavebníctvo',
       icon: Building2,
       color: 'bg-slate-700 hover:bg-slate-800',
-      activeColor: 'bg-slate-800'
+      activeColor: 'bg-teal-700'
     },
     {
       id: 'mechanical',
       name: 'Strojárstvo',
       icon: Settings,
       color: 'bg-gray-700 hover:bg-gray-800',
-      activeColor: 'bg-gray-800'
+      activeColor: 'bg-teal-700'
     }
   ];
 
