@@ -23,7 +23,7 @@ const NavDropdown = ({ label, items, to, isMobile }) => {
   }, []);
 
   const handleMouseEnter = () => {
-    if (!isMobile) {
+    if (!isMobile && items.length > 0) {
       if (closeTimeoutRef.current) {
         clearTimeout(closeTimeoutRef.current);
       }
@@ -32,13 +32,26 @@ const NavDropdown = ({ label, items, to, isMobile }) => {
   };
 
   const handleMouseLeave = () => {
-    if (!isMobile) {
+    if (!isMobile && items.length > 0) {
       closeTimeoutRef.current = setTimeout(() => {
         setIsOpen(false);
-      }, 100); // 300ms delay
+      }, 100);
     }
   };
 
+  // If no items, render as a simple link
+  if (items.length === 0) {
+    return (
+      <Link
+        to={to}
+        className={`hover:text-teal-400 transition-colors ${isMobile ? 'w-full py-2 block' : ''}`}
+      >
+        {label}
+      </Link>
+    );
+  }
+
+  // If has items, render as dropdown
   return (
     <div 
       className={`relative ${isMobile ? 'w-full' : ''}`} 
