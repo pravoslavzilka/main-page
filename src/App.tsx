@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToHash from "./components/ScrollToHash";
 
 import Hardware from './pages/Hardware';
 import Software from './pages/Software';
@@ -18,6 +19,7 @@ function App() {
 
     <Router>
       <div className="min-h-screen bg-gray-50">
+        <ScrollToHash />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

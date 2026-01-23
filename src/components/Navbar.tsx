@@ -105,8 +105,8 @@ const Navbar = () => {
         { label: 'Software', to: '/software' },
         { label: 'PC zostavy', to: '/hardware/#custom-pc' },
         { label: 'Plotre', to: '/hardware#plotter' },
-        { label: 'Skladačky výkresov', to: '/hardware#custom-pc' },
-        { label: 'Kancelársky materiál', to: '/hardware#custom-pc' }
+        { label: 'Skladačky výkresov', to: '/hardware#puzzle' },
+        { label: 'Kancelársky materiál', to: '/hardware#office' }
       ]
     },
     {

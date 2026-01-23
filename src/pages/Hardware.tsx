@@ -31,9 +31,9 @@ const Hardware = () => {
       </section>
 
       {/* Custom PC Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className=" px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center" id='custom-pc'>
+          <div className="grid md:grid-cols-2 gap-12 py-16 items-center" id='custom-pc'>
             <div>
               <h2 className="text-2xl font-bold text-[#008080] mb-6">
                 Počítačové zostavy na mieru
@@ -114,9 +114,9 @@ const Hardware = () => {
       </section>
 
       {/* Large Format Printers */}
-      <section className="py-16 px-4 bg-white">
+      <section className=" px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center" id="plotter">
+          <div className="grid md:grid-cols-2 gap-12 items-center py-16" id="plotter">
             <div>
               <h2 className="text-2xl font-bold text-teal-600 mb-6">
                 Veľkoformátové tlačiarne tzv. plotre
@@ -187,9 +187,9 @@ const Hardware = () => {
 
 
         {/* Large Format Printers - Image Left */}
-        <section className="py-16 px-4 bg-white">
+        <section className=" px-4 bg-white">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center py-16" id="puzzle">
               <div className="flex justify-center">
                 <div className=" rounded-lg">
                   <img src="https://new.smartcad.sk/wp-content/uploads/2024/03/rowe-skladacka.png" alt="Placeholder" className="h-50 text-gray-600" />
@@ -230,9 +230,9 @@ const Hardware = () => {
 
 
 
-        <section className="py-16 px-4 bg-white">
+        <section className=" px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center py-16" id="office">
             <div>
               <h2 className="text-2xl font-bold text-teal-600 mb-6">
                 Plotrové role, náplne a hlavy do plotrov, kancelárske potreby
