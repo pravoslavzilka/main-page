@@ -25,7 +25,7 @@ Stretnutia, sa po tak dlhej dobe nesú už vo veľmi priateľskej atmosfére.
 
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzApfUQeGlPkReLlv2gSKxR3Ug4kDr1O-hQ&s" alt="Ivan Sopko" className="w-12 h-12 rounded-full" /></div>
+                {/*<div className="w-12 h-12 bg-gray-300 rounded-full mr-4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzApfUQeGlPkReLlv2gSKxR3Ug4kDr1O-hQ&s" alt="Ivan Sopko" className="w-12 h-12 rounded-full" /></div>*/}
                 <div>
                   <div className="font-semibold text-slate-800">Ivan Sopko</div>
                   <div className="text-gray-600 text-sm">Konštruktér, SAM Industries a.s.</div>
@@ -43,7 +43,7 @@ Stretnutia, sa po tak dlhej dobe nesú už vo veľmi priateľskej atmosfére.
                 Chcem poďakovať za seba a aj za našu spoločnosť za spoluprácu pri nákupe/obnove našich licencií AutoCad. Za ústretovosť, promptnosť a hlavne za trpezlivosť tento rok pri zmene spôsobu nákupu, ktorý sme Vašou pomocou a navigáciou zvládli bez problémov. Bolo nám vysvetlené všetko zrozumiteľne a užívateľsky jednoducho, čo nám veľmi pomohlo. Kvalitu Vašich služieb hodnotím osobne na 100%.
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"><img src="https://play-lh.googleusercontent.com/I6kk5TUH2luEQRInqoJeegF3N2z2DhR8owAGLU_6SGs51jduGiln3ATQSmYfqXgfP5VB" alt="Andrea Fumačová" className="w-12 h-12 rounded-full" /></div>
+                {/*<div className="w-12 h-12 bg-gray-300 rounded-full mr-4"><img src="https://play-lh.googleusercontent.com/I6kk5TUH2luEQRInqoJeegF3N2z2DhR8owAGLU_6SGs51jduGiln3ATQSmYfqXgfP5VB" alt="Andrea Fumačová" className="w-12 h-12 rounded-full" /></div>*/}
                 <div>
                   <div className="font-semibold text-slate-800">Andrea Fumačová</div>
                   <div className="text-gray-600 text-sm">Špecialista podpory IT, VÚB banka</div>
@@ -61,7 +61,7 @@ Stretnutia, sa po tak dlhej dobe nesú už vo veľmi priateľskej atmosfére.
                 So spoločnosťou smartCAD s.r.o. spolupracuje naša firma už niekoľko rokov. Doteraz som bola s dodaním zariadení aj produktov vždy spokojná. Obstarávali sme od nich už skladačku aj scanner značky Rowe, ktoré nám zjednodušujú výkon našej každodennej činnosti a šetria čas. Okrem zariadení sú našim pravidelným dodávateľom kancelárskych potrieb. Vždy sa snažia vyhovieť našim požiadavkám a aj v prípade reklamačného konania je situácia vždy vyriešená v náš prospech.
               </p>
               <div className="flex items-center">
-                <div className="w-12 h-12 rounded-full mr-4"><img src="https://www.junoz.sk/wp-content/themes/junoz/img/junoz.svg" alt="Viktória Jalšovská" className="w-12 h-12 rounded-full" /></div>
+                {/*<div className="w-12 h-12 rounded-full mr-4"><img src="https://www.junoz.sk/wp-content/themes/junoz/img/junoz.svg" alt="Viktória Jalšovská" className="w-12 h-12 rounded-full" /></div>*/}
                 <div>
                   <div className="font-semibold text-slate-800">Viktória Jalšovská</div>
                   <div className="text-gray-600 text-sm">Obchodný manažér, Junoz, s.r.o.</div>
