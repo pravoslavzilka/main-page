@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Phone, Monitor, Download, ChevronDown, ChevronUp, X } from 'lucide-react';
 
 export default function TechnicalSupport() {
+
+
   const [expandedFaq, setExpandedFaq] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -12,6 +14,45 @@ export default function TechnicalSupport() {
     productVersion: '',
     description: ''
   });
+
+    async function handleSubmit(e) {
+  e.preventDefault();
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.description,
+        }),
+      });
+
+      if (!res.ok) {
+        throw new Error('Request failed');
+      }
+
+      alert('Vaša požiadavka bola odoslaná! Budeme vás kontaktovať čo najskôr.');
+
+      setIsModalOpen(false);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        productType: '',
+        productVersion: '',
+        description: ''
+      });
+
+    } catch (error) {
+      console.error(error);
+      alert('Niečo sa pokazilo. Skúste to prosím znova.');
+    }
+  }
+
 
   const toggleFaq = (index) => {
     setExpandedFaq(expandedFaq === index ? null : index);
@@ -25,21 +66,7 @@ export default function TechnicalSupport() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Here you would typically send the data to your backend
-    alert('Vaša požiadavka bola odoslaná! Budeme vás kontaktovať čo najskôr.');
-    setIsModalOpen(false);
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      productType: '',
-      productVersion: '',
-      description: ''
-    });
-  };
+
 
   const faqItems = [
     
