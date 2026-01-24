@@ -67,7 +67,7 @@ const Hardware = () => {
             </div>
             <div className="flex justify-center">
               <div className="">
-                <img src="https://new.smartcad.sk/wp-content/uploads/2024/03/PC-zostavy.png" alt="Custom PC" className=" h-50 text-blue-400 mx-auto" />
+                <img src="/images/hw5.png" alt="Custom PC" className=" h-50 text-blue-400 mx-auto" />
               </div>
             </div>
           </div>
@@ -176,7 +176,7 @@ const Hardware = () => {
             </div>
             <div className="flex justify-center">
               <div className=" rounded-lg">
-                <img src="https://new.smartcad.sk/wp-content/uploads/2024/03/T950MFP.png" alt="Placeholder" className="h-50 text-gray-600" />
+                <img src="/images/hw4.png" alt="Placeholder" className="h-50 text-gray-600" />
               </div>
               
             </div>
@@ -192,7 +192,7 @@ const Hardware = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center py-16" id="puzzle">
               <div className="flex justify-center">
                 <div className=" rounded-lg">
-                  <img src="https://new.smartcad.sk/wp-content/uploads/2024/03/rowe-skladacka.png" alt="Placeholder" className="h-50 text-gray-600" />
+                  <img src="/images/hw3.png" alt="Placeholder" className="h-50 text-gray-600" />
                 </div>
               </div>
               <div>
@@ -270,7 +270,7 @@ const Hardware = () => {
             </div>
             <div className="flex justify-center">
               <div className=" rounded-lg">
-                <img src="./images/hw2.png" alt="Placeholder" className="h-50 text-gray-600" />
+                <img src="/images/hw2.png" alt="Placeholder" className="h-50 text-gray-600" />
               </div>
               
             </div>
