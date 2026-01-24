@@ -130,28 +130,30 @@ export default function TechnicalSupport() {
         </div>
 
         {/* Remote Access */}
-        <div className="bg-[#5fa4a4] rounded-2xl p-8 mb-12 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="flex items-center gap-4">
-              <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl">
-                <Download className="w-8 h-8 text-white" />
+        <a href="https://smartcad.sk/tv/smartcad-podpora.exe" target='_blank' >
+          <div className="bg-[#5fa4a4] rounded-2xl p-8 mb-12 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div className="flex items-center gap-4">
+                <div className="bg-white backdrop-blur-sm p-4 rounded-xl">
+                  <img src="/images/team_viewer.png" className="w-12 h-12 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-1">Vzdialený prístup</h3>
+                  <p className="text-white/80">Pre rýchlu podporu na diaľku</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-1">Vzdialený prístup</h3>
-                <p className="text-white/80">Pre rýchlu podporu na diaľku</p>
-              </div>
+              <button
+                
+                
+                rel="noopener noreferrer"
+                className="bg-[#008080] text-white px-8 py-4 rounded-xl font-semibold  flex items-center gap-2"
+              >
+                Stiahnuť bezplatnú aplikáciu Teamviewer
+                <Download className="w-5 h-5" />
+              </button>
             </div>
-            <a
-              href="https://smartcad.sk/tv/smartcad-podpora.exe"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#008080] text-white px-8 py-4 rounded-xl font-semibold  transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 flex items-center gap-2"
-            >
-              Stiahnuť bezplatnú aplikáciu Teamviewer
-              <Download className="w-5 h-5" />
-            </a>
           </div>
-        </div>
+        </a>
 
         {/* Request Support Section */}
         <button 

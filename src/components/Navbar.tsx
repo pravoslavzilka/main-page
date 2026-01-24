@@ -122,7 +122,7 @@ const Navbar = () => {
     },
     {
       label: 'Blog',
-      to: '#skolenia',
+      to: '/skolenia',
       items: []
     },
     {
