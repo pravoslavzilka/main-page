@@ -129,7 +129,7 @@ const Navbar = () => {
       label: 'O nás',
       to: '#o-nas',
       items: [
-        { label: 'Kontakt', to: '/o-nas/company' },
+        { label: 'Kontakt', to: '/kontakt' },
         { label: 'Kariéra', to: '/o-nas/team' }
       ]
     }

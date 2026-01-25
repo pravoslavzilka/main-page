@@ -9,6 +9,7 @@ import ScrollToHash from "./components/ScrollToHash";
 import Hardware from './pages/Hardware';
 import Software from './pages/Software';
 import TechnicalSupport from './pages/TechnicalSupport';
+import ContactPage from './pages/ContactPage';
 
 
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/hardware" element={<Hardware />} />
           <Route path="/software" element={<Software />} />
           <Route path="/tech/podpora" element={<TechnicalSupport />} />
+          <Route path="/kontakt" element={<ContactPage />} />
 
           
           
