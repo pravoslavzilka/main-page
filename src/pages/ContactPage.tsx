@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Send, X } from 'lucide-react';
+import teamMembers from '../data/teamMembers.json';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -11,27 +12,7 @@ export default function ContactPage() {
   });
   
   const [selectedPerson, setSelectedPerson] = useState(null);
-
-  const teamMembers = [
-    {
-      id: 1,
-      name: 'Ing. Ján Žilka',
-      role: 'Odborný konzultant pre BIM',
-      initials: 'JŽ',
-      email: 'jan.zilka@smartcad.sk',
-      phone: '+421 940 636 489',
-      color: 'from-[#008080] to-[#49a7b1]'
-    },
-    {
-      id: 2,
-      name: 'Ing. Zuzana Tokárová',
-      role: 'Sales Manager',
-      initials: 'ZT',
-      email: 'zuzana.tokarova@smartcad.sk',
-      phone: '+421 940 636 743',
-      color: 'from-[#49a7b1] to-[#5fa4a4]'
-    }
-  ];
+  const [showTeam, setShowTeam] = useState(false);
 
   const handleSubmit = () => {
     if (!formData.name || !formData.email || !formData.phone || !formData.message) {
@@ -59,7 +40,7 @@ export default function ContactPage() {
         
         <div className="text-center mb-6">
           <div className={`w-24 h-24 bg-gradient-to-br ${person.color} rounded-full mx-auto mb-4 flex items-center justify-center text-white text-3xl font-bold shadow-lg`}>
-            {person.initials}
+            <img src={person.image} alt={person.name} className="w-24 h-24 rounded-full object-cover" />
           </div>
           <h3 className="text-2xl font-bold text-[#191a1a] mb-2">{person.name}</h3>
           <p className="text-[#008080] font-semibold">{person.role}</p>
@@ -123,6 +104,8 @@ export default function ContactPage() {
                   <span className="font-medium">obchod@smartcad.sk</span>
                 </a>
               </div>
+                            <p className="text-sm text-gray-600 mt-4 pt-4 border-t border-gray-200">V pracovné dni od 8:00 do 16:00</p>
+
             </div>
 
             {/* Technická podpora - Software */}
@@ -146,6 +129,8 @@ export default function ContactPage() {
                   <span className="font-medium">+421 940 636 743</span>
                 </a>
               </div>
+                            <p className="text-sm text-gray-600 mt-4 pt-4 border-t border-gray-200">V pracovné dni od 8:00 do 16:00</p>
+
             </div>
 
             {/* Hardware */}
@@ -239,7 +224,7 @@ export default function ContactPage() {
             <div className="md:col-span-2">
               <button
                 onClick={handleSubmit}
-                className="bg-[#008080] text-white px-10 py-4 rounded-xl font-bold hover:bg-[#fef34d] transition-all flex items-center gap-3 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-lg"
+                className="bg-[#008080] text-white px-10 py-4 rounded-xl font-bold  transition-all flex items-center gap-3 shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-lg"
               >
                 <Send size={22} />
                 Odoslať
@@ -256,23 +241,32 @@ export default function ContactPage() {
     </div>
     {/* Team Section */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-12">
-          <h2 className="text-3xl font-bold text-[#191a1a] mb-6">Chcete kontaktovať konkrétnu osobu?</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {teamMembers.map((person) => (
-              <div
-                key={person.id}
-                onClick={() => setSelectedPerson(person)}
-                className="border-2 border-[#86cccf] rounded-2xl p-6 hover:shadow-lg transition-all cursor-pointer hover:border-[#008080] hover:-translate-y-1"
-              >
-                <div className={`w-20 h-20 bg-gradient-to-br ${person.color} rounded-full mb-4 flex items-center justify-center text-white text-2xl font-bold shadow-lg`}>
-                  {person.initials}
+          <button
+            onClick={() => setShowTeam(!showTeam)}
+            className="w-full text-left flex items-center justify-between"
+          >
+            <h2 className="text-3xl font-bold text-[#191a1a] mb-6">Chcete kontaktovať konkrétnu osobu?</h2>
+            <span className="text-sm text-[#008080]">{showTeam ? 'Skryť' : 'Zobraziť osoby'}</span>
+          </button>
+
+          {showTeam && (
+            <div className="grid md:grid-cols-2 gap-6 mt-4">
+              {teamMembers.map((person) => (
+                <div
+                  key={person.id}
+                  onClick={() => setSelectedPerson(person)}
+                  className="border-2 border-[#86cccf] rounded-2xl p-6 hover:shadow-lg transition-all cursor-pointer hover:border-[#008080] hover:-translate-y-1"
+                >
+                  <div className={`w-20 h-20 bg-gradient-to-br rounded-full mb-4 flex items-center justify-center text-white text-2xl font-bold shadow-lg`}>
+                    <img src={person.image} alt={person.name} className="w-20 h-20 rounded-full object-cover" />
+                  </div>
+                  <h3 className="text-lg font-bold text-[#191a1a]">{person.name}</h3>
+                  <p className="text-[#5fa4a4] font-medium">{person.role}</p>
+                  <p className="text-sm text-[#008080] mt-2 font-semibold">Kliknite pre kontakt →</p>
                 </div>
-                <h3 className="text-lg font-bold text-[#191a1a]">{person.name}</h3>
-                <p className="text-[#5fa4a4] font-medium">{person.role}</p>
-                <p className="text-sm text-[#008080] mt-2 font-semibold">Kliknite pre kontakt →</p>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Office Locations */}
@@ -288,6 +282,9 @@ export default function ContactPage() {
                 <p className="text-[#191a1a] font-medium">811 05 Bratislava</p>
               </div>
             </div>
+             <div className='mt-10 rounded'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d484.1143980577852!2d17.115218227025395!3d48.15845356146418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c89528fd37fff%3A0xc93a1b5e96239e1e!2ssmartCAD%20s.r.o.!5e0!3m2!1sen!2ssk!4v1769381710633!5m2!1sen!2ssk" width="100%" height="400"  allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all">
@@ -301,6 +298,9 @@ export default function ContactPage() {
                 <p className="text-[#191a1a] font-medium">974 03 Banská Bystrica</p>
               </div>
             </div>
+            <div className='mt-10 rounded'>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2632.8630305465936!2d19.13310371274987!3d48.70809887119257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47153dd79fa9f7e3%3A0xc08145d3bb97bbc7!2ssmartCAD%20s.r.o.!5e0!3m2!1sen!2ssk!4v1769381953867!5m2!1sen!2ssk" width="100%" height="400"  allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            </div>  
           </div>
         </div>
 
@@ -309,7 +309,7 @@ export default function ContactPage() {
           <h3 className="text-2xl font-bold mb-6">Fakturačné údaje</h3>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <p className="font-bold text-xl text-[#fbea01] mb-2">smartCAD s.r.o.</p>
+              <p className="font-bold text-xl  mb-2">smartCAD s.r.o.</p>
               <p className="text-white opacity-90">Čajakova 19</p>
               <p className="text-white opacity-90">811 05 Bratislava</p>
             </div>

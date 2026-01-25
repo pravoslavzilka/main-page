@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "name": "Ing. Zuzana Tokárová",
+    "role": "CAD Sales Manager",
+    "email": "tokarova@smartcad.sk",
+    "phone": "+421 (0)940 636 749",
+    "image": "/images/team/zuzana-tokarova.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Mgr. Zuzana Ježková",
+    "role": "CAD Sales Manager",
+    "email": "jezkova@smartcad.sk",
+    "phone": "+421 (0)948 701 829",
+    "image": "/images/team/zuzana-jezkova.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Radovan Vaňa",
+    "role": "Logistic and Purchasing",
+    "email": "doprava@smartcad.sk",
+    "phone": "+421 (0)940 636 741",
+    "image": "/images/team/radovan-vana.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Ing. Peter Štofík",
+    "role": "CAD Application Engineer",
+    "email": "stofik@smartcad.sk",
+    "phone": "+421 (0)940 636 487",
+    "image": "/images/team/peter-stofik.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Ing. Norbert Tokár",
+    "role": "BIM / CAD Application Engineer",
+    "email": "tokar@smartcad.sk",
+    "phone": "+421 (0)940 636 748",
+    "image": "/images/team/norbert-tokar.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Mgr. Miroslav Mihál",
+    "role": "CAD HW Implementation Specialist",
+    "email": "mihal@smartcad.sk",
+    "phone": "+421 (0)940 636 483",
+    "image": "/images/team/miroslav-mihal.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Ing. Miriama Krajmerová",
+    "role": "CAD Sales Manager",
+    "email": "krajmerova@smartcad.sk",
+    "phone": "+421 (0)940 636 745",
+    "image": "/images/team/miriama-krajmerova.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Ing. Milan Grochal, PhD.",
+    "role": "CAD Application Engineer",
+    "email": "grochal@smartcad.sk",
+    "phone": "+421 (0)940 636 485",
+    "image": "/images/team/milan-grochal.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Mgr. Martin Straško",
+    "role": "HW Sales and Product Manager",
+    "email": "strasko@smartcad.sk",
+    "phone": "+421 (0)940 636 481",
+    "image": "/images/team/martin-strasko.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Marián Hrotík",
+    "role": "Servisný Technik pre veľkoformátové tlačiarne a servre",
+    "email": "hrotik@smartcad.sk",
+    "phone": "+421 (0)940 636 742",
+    "image": "/images/team/marian-hrotik.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Ing. Marek Košťany",
+    "role": "CAD Application Engineer",
+    "email": "kostany@smartcad.sk",
+    "phone": "+421 (0)940 636 486",
+    "image": "/images/team/marek-kostany.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Ing. Marcel Nesvadba",
+    "role": "Projektant",
+    "email": "nesvadba@smartcad.sk",
+    "phone": "",
+    "image": "/images/team/marcel-nesvadba.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Mgr. Lukáš Šimek",
+    "role": "CAD Sales and MFG Product Manager",
+    "email": "simek@smartcad.sk",
+    "phone": "+421 (0)940 636 747",
+    "image": "/images/team/lukas-simek.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Ing. Ľubomír Šimák",
+    "role": "CAD Application Engineer",
+    "email": "simak@smartcad.sk",
+    "phone": "+421 (0) 940 636 743",
+    "image": "/images/team/lubomir-simak.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Ing. arch. Ľubo Ivančák",
+    "role": "graphic design - digital printing",
+    "email": "ivancak@smartcad.sk",
+    "phone": "+421 (0)905 384 849",
+    "image": "/images/team/lubo-ivancak.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Ing. Ladislav Líška",
+    "role": "Konzultant pre HP plotre",
+    "email": "liska@smartcad.sk",
+    "phone": "+421 (0)940 636 482",
+    "image": "/images/team/ladislav-liska.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Ing. Juraj Holík",
+    "role": "konateľ",
+    "email": "holik@smartcad.sk",
+    "phone": "",
+    "image": "/images/team/juraj-holik.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Janka Belková",
+    "role": "Office Manager",
+    "email": "belkova@smartcad.sk",
+    "phone": "+421 (0)940 636 740",
+    "image": "/images/team/janka-belkova.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Ing. Ján Žilka",
+    "role": "Odborný konzultant pre BIM",
+    "email": "zilka@smartcad.sk",
+    "phone": "+421 (0)940 636 480",
+    "image": "/images/team/jan-zilka.jpg"
+  }
+]
