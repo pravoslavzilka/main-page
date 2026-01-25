@@ -250,7 +250,7 @@ export default function ContactPage() {
           </button>
 
           {showTeam && (
-            <div className="grid md:grid-cols-2 gap-6 mt-4">
+            <div className="grid md:grid-cols-3 gap-6 mt-4">
               {teamMembers.map((person) => (
                 <div
                   key={person.id}
