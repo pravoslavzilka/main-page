@@ -10,6 +10,7 @@ import Hardware from './pages/Hardware';
 import Software from './pages/Software';
 import TechnicalSupport from './pages/TechnicalSupport';
 import ContactPage from './pages/ContactPage';
+import BlogPage from './pages/BlogPage';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/software" element={<Software />} />
           <Route path="/tech/podpora" element={<TechnicalSupport />} />
           <Route path="/kontakt" element={<ContactPage />} />
+          <Route path="/blog" element={<BlogPage />} />
 
           
           
