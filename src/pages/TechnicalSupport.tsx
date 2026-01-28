@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, Monitor, Download, ChevronDown, ChevronUp, X } from 'lucide-react';
+import { Phone, Monitor, Mail, Download, ChevronDown, ChevronUp, X } from 'lucide-react';
 
 export default function TechnicalSupport() {
 
@@ -122,42 +122,45 @@ export default function TechnicalSupport() {
         </header>
 
         {/* Contact Cards */}
-        <div className="grid md:grid-cols-2 gap-6 mb-12">
-          {/* Software Support */}
-          <div className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#5fa4a4]/20 hover:border-[#5fa4a4]/50 hover:-translate-y-1">
-            <div className="flex items-start gap-4">
-              <div className="bg-[#191a1a] p-4 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <Monitor className="w-6 h-6 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-[#191a1a] mb-3">Software</h3>
-                <a href="tel:+421940636743" className="text-2xl font-bold text-[#008080] hover:text-[#5fa4a4] transition-colors block mb-2">
-                  +421 940 636 743
+        <div className="grid md:grid-cols-2 gap-6 mb-12 " >
+          <div className="space-y-8">
+
+        
+
+            
+            <div className=" p-6">
+
+              <div className="space-y-3">
+               
+
+              <div className="space-y-3">
+                
+                 <a href="tel:+421940636743" className="flex text-xl items-center text-[#191a1a] hover:text-[#49a7b1] transition-colors group">
+                  <p className=" font-semibold text-[#5fa4a4] ">Software</p>
+                  <span className="font-bold ml-4">+421 940 636 743</span>
                 </a>
-                <p className="text-sm text-[#191a1a]/60">v pracovné dni od 8:00 do 16:00</p>
+                <a href="tel:+421940636482" className="flex text-xl items-center text-[#191a1a] hover:text-[#5fa4a4] transition-colors group">
+                  <p className=" font-semibold text-[#5fa4a4]">Hardware</p>
+                  <span className="font-bold ml-4">+421 940 636 482</span>
+                </a>
+
               </div>
+
+
+
+              </div>
+
+              
+                            <p className="text-sm text-gray-600 mt-4 pt-4 border-t border-gray-200">V pracovné dni od 8:00 do 16:00</p>
+
             </div>
+
+          
           </div>
 
           {/* Hardware Support */}
-          <div className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-[#f9a7b1]/20 hover:border-[#f9a7b1]/50 hover:-translate-y-1">
-            <div className="flex items-start gap-4">
-              <div className="bg-[#191a1a] p-4 rounded-xl shadow-lg group-hover:scale-110 transition-transform duration-300">
-                <Phone className="w-6 h-6 text-white" />
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-[#191a1a] mb-3">Hardware</h3>
-                <a href="tel:+421940636482" className="text-2xl font-bold text-[#008080] hover:text-[#5fa4a4] transition-colors block mb-2">
-                  +421 940 636 482
-                </a>
-                <p className="text-sm text-[#191a1a]/60">v pracovné dni od 8:00 do 16:00</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Remote Access */}
-        <a href="https://smartcad.sk/tv/smartcad-podpora.exe" target='_blank' >
+          <div className="group ">
+            <a href="https://smartcad.sk/tv/smartcad-podpora.exe" target='_blank' >
           <div className="bg-[#5fa4a4] rounded-2xl p-8 mb-12 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02]">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-4">
@@ -166,21 +169,23 @@ export default function TechnicalSupport() {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-1">Vzdialený prístup</h3>
-                  <p className="text-white/80">Pre rýchlu podporu na diaľku</p>
-                </div>
-              </div>
-              <button
+                   <button
                 
                 
                 rel="noopener noreferrer"
-                className="bg-[#008080] text-white px-8 py-4 rounded-xl font-semibold  flex items-center gap-2"
+                className=" text-white  "
               >
                 Stiahnuť bezplatnú aplikáciu Teamviewer
-                <Download className="w-5 h-5" />
               </button>
+                </div>
+              </div>
+             
             </div>
           </div>
         </a>
+          </div>
+        </div>
+
 
         {/* Request Support Section */}
         <button 

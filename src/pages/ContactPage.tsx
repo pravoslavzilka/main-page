@@ -84,12 +84,14 @@ export default function ContactPage() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid gap-8 mb-12 md:grid-cols-2 items-start">
           <div className="space-y-8">
-            {/* Obchod */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all hover:-translate-y-1">
-              <div className="w-14 h-14 bg-[#008080] rounded-xl flex items-center justify-center mb-4 shadow-lg">
-                <Phone className="text-white" size={26} />
-              </div>
-              <h3 className="text-xl font-bold text-[#191a1a] mb-4">Obchod</h3>
+
+        
+
+            
+            <div className=" p-6">
+              
+          
+              <h3 className="text-2xl font-bold text-[#191a1a] mb-4">Obchod</h3>
               <div className="space-y-3">
                 <a href="tel:+421940636489" className="flex items-center text-[#191a1a] hover:text-[#008080] transition-colors group">
                   <div className="w-8 h-8 bg-[#86cccf] rounded-lg flex items-center justify-center mr-3 group-hover:bg-[#49a7b1] transition-colors">
@@ -104,17 +106,11 @@ export default function ContactPage() {
                   <span className="font-medium">obchod@smartcad.sk</span>
                 </a>
               </div>
-                            <p className="text-sm text-gray-600 mt-4 pt-4 border-t border-gray-200">V pracovné dni od 8:00 do 16:00</p>
 
-            </div>
 
-            {/* Technická podpora - Software */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all hover:-translate-y-1">
-              <div className="w-14 h-14 bg-[#49a7b1] rounded-xl flex items-center justify-center mb-4 shadow-lg">
-                <Mail className="text-white" size={26} />
-              </div>
-              <h3 className="text-xl font-bold text-[#191a1a] mb-2">Technická podpora</h3>
-              <p className="text-sm font-semibold text-[#5fa4a4] mb-4">Software</p>
+
+              <h3 className="text-2xl font-bold text-[#191a1a] mb-2 mt-12">Technická podpora</h3>
+              <p className="text-lg font-semibold text-[#5fa4a4] mb-4 mt-6">Software</p>
               <div className="space-y-3">
                 <a href="mailto:podpora@smartcad.sk" className="flex items-center text-[#191a1a] hover:text-[#49a7b1] transition-colors group">
                   <div className="w-8 h-8 bg-[#86cccf] rounded-lg flex items-center justify-center mr-3 group-hover:bg-[#49a7b1] transition-colors">
@@ -128,17 +124,10 @@ export default function ContactPage() {
                   </div>
                   <span className="font-medium">+421 940 636 743</span>
                 </a>
-              </div>
-                            <p className="text-sm text-gray-600 mt-4 pt-4 border-t border-gray-200">V pracovné dni od 8:00 do 16:00</p>
 
-            </div>
 
-            {/* Hardware */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all hover:-translate-y-1">
-              <div className="w-14 h-14 bg-[#5fa4a4] rounded-xl flex items-center justify-center mb-4 shadow-lg">
-                <Phone className="text-white" size={26} />
-              </div>
-              <h3 className="text-xl font-bold text-[#191a1a] mb-4">Hardware</h3>
+
+              <p className="text-lg font-semibold text-[#5fa4a4] mb-4 pt-6">Hardware</p>
               <div className="space-y-3">
                 <a href="mailto:servis@smartcad.sk" className="flex items-center text-[#191a1a] hover:text-[#5fa4a4] transition-colors group">
                   <div className="w-8 h-8 bg-[#86cccf] rounded-lg flex items-center justify-center mr-3 group-hover:bg-[#5fa4a4] transition-colors">
@@ -153,8 +142,17 @@ export default function ContactPage() {
                   <span className="font-medium">+421 940 636 482</span>
                 </a>
               </div>
-              <p className="text-sm text-gray-600 mt-4 pt-4 border-t border-gray-200">V pracovné dni od 8:00 do 16:00</p>
+
+
+
+              </div>
+
+              
+                            <p className="text-sm text-gray-600 mt-4 pt-4 border-t border-gray-200">V pracovné dni od 8:00 do 16:00</p>
+
             </div>
+
+          
           </div>
 
           {/* Contact Form */}
