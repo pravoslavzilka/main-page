@@ -45,7 +45,7 @@ const Blog = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {blogPosts.map((post) => (
-              <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+              <article key={post.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow group flex flex-col">
                 <div className="relative overflow-hidden">
                   <img 
                     src={post.image} 
@@ -56,7 +56,7 @@ const Blog = () => {
                     {post.category}
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="text-sm text-gray-500 mb-2">{post.date}</div>
                   <h3 className="text-xl font-bold text-slate-800 mb-3 group-hover:text-teal-600 transition-colors">
                     {post.title}
@@ -64,7 +64,7 @@ const Blog = () => {
                   <p className="text-gray-600 mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
-                  <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center">
+                  <button className="text-teal-600 font-semibold hover:text-teal-700 transition-colors flex items-center mt-auto">
                     Čítať viac <ArrowRight className="ml-2 w-4 h-4" />
                   </button>
                 </div>
