@@ -103,19 +103,17 @@ const BlogPage = () => {
       {/* Header */}
       <header className="bg-[#008080] py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            Zostaň s nami v obraze<br />
-            o novinkách zo sveta<br />
-            CAD a BIM
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Zostaň s nami v obraze
           </h1>
           <p className="text-xl text-white/90 max-w-2xl">
-            ktoré ti pomôžu profesne rásť
+            o novinkách zo sveta CAD a BIM, ktoré ti pomôžu profesne rásť
           </p>
         </div>
       </header>
 
       {/* Categories and Search */}
-      <div className="bg-white py-8 px-6 sticky top-0 z-20 shadow-lg border-b border-[#86cccf]/30">
+      <div className="bg-white py-8 px-6 sticky top-0 z-20 ">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             {/* Categories */}
@@ -218,7 +216,7 @@ const BlogPage = () => {
                       animation: `fadeInUp 0.6s ease-out ${index * 0.1}s backwards` 
                     }}
                   >
-                    <div className="relative overflow-hidden rounded-xl aspect-[4/3] mb-4 bg-[#008080]/10">
+                    <div className="relative overflow-hidden rounded-xl aspect-[16/9] mb-4 bg-[#008080]/10">
                       <img 
                         src={post.image} 
                         alt={post.title}

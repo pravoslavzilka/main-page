@@ -104,22 +104,24 @@ export default function TechnicalSupport() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-[#86cccf]/10 to-[#5fa4a4]/10">
-      {/* Decorative background elements */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-[#5fa4a4]/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#fbea01]/20 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
-      </div>
-
-      <div className="relative max-w-6xl mx-auto px-6 py-16">
-        {/* Header */}
-        <header className="text-center mt-10 mb-24 animate-fadeIn">
-          <h1 className="text-3xl md:text-6xl font-bold bg-[#008080] bg-clip-text text-transparent mb-4 tracking-tight">
+      
+           <header className="bg-[#008080] py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
             smartCAD technická podpora
           </h1>
-          <p className="text-xl text-[#191a1a] font-light tracking-wide">
+          <p className="text-xl text-white/90 max-w-2xl">
             Sme tu pre Vás už viac než 15 rokov - osobne aj online
           </p>
-        </header>
+        </div>
+      </header>
+
+      <div className="relative max-w-6xl mx-auto px-6 py-16">
+        
+
+
+   
+
 
         {/* Contact Cards */}
         <div className="grid md:grid-cols-2 gap-6 mb-12 " >

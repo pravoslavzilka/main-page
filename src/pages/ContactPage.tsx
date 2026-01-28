@@ -74,12 +74,17 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen ">
       {/* Header */}
-      <div className="bg-[#008080] shadow-lg">
-        <div className="max-w-6xl mx-auto px-4 py-8">
-          <h1 className="text-4xl font-bold text-white">Naši experti sú tu, aby vám pomohli</h1>
-          <p className="text-white text-opacity-90 mt-2 text-lg">Kontaktujte nás a premieňte vaše vízie na realitu</p>
+     
+      <header className="bg-[#008080] py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+            Naši experti sú tu, aby vám pomohli
+          </h1>
+          <p className="text-xl text-white/90 max-w-2xl">
+            Kontaktujte nás a premieňte vaše vízie na realitu
+          </p>
         </div>
-      </div>
+      </header>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid gap-8 mb-12 md:grid-cols-2 items-start">
